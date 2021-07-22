@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007626A51AE400C7AD91 /* AppDelegate.swift */; };
+		3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */; };
+		3DBB007E26A51AE400C7AD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB007C26A51AE400C7AD91 /* Main.storyboard */; };
+		3DBB008026A51AE800C7AD91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB007F26A51AE800C7AD91 /* Assets.xcassets */; };
+		3DBB008326A51AE800C7AD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB008126A51AE800C7AD91 /* LaunchScreen.storyboard */; };
+		3DBB008E26A51AE900C7AD91 /* holdBreathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB008D26A51AE900C7AD91 /* holdBreathTests.swift */; };
+		3DBB009926A51AE900C7AD91 /* holdBreathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB009826A51AE900C7AD91 /* holdBreathUITests.swift */; };
+		3DBB00A726A52F7B00C7AD91 /* training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB00A626A52F7B00C7AD91 /* training.swift */; };
+		3DBB00A926A52FA900C7AD91 /* choiseTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB00A826A52FA900C7AD91 /* choiseTraining.swift */; };
+		3DBB00AB26A52FC400C7AD91 /* holding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB00AA26A52FC400C7AD91 /* holding.swift */; };
+		3DBB00AD26A5300A00C7AD91 /* setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB00AC26A5300A00C7AD91 /* setting.swift */; };
+		3DBB00B026A56FA000C7AD91 /* breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB00AE26A56FA000C7AD91 /* breath.mp3 */; };
+		3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */; };
+		3DF838CC26A7CF9F00C57680 /* done.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838CB26A7CF9F00C57680 /* done.mp3 */; };
+		3DF838D626A85F7900C57680 /* prepareTime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D526A85F7900C57680 /* prepareTime.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DBB008A26A51AE900C7AD91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBB006B26A51AE400C7AD91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DBB007226A51AE400C7AD91;
+			remoteInfo = holdBreath;
+		};
+		3DBB009526A51AE900C7AD91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBB006B26A51AE400C7AD91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DBB007226A51AE400C7AD91;
+			remoteInfo = holdBreath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DBB007326A51AE400C7AD91 /* holdBreath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holdBreath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBB007626A51AE400C7AD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DBB007D26A51AE400C7AD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DBB007F26A51AE800C7AD91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DBB008226A51AE800C7AD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DBB008426A51AE800C7AD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBB008926A51AE800C7AD91 /* holdBreathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = holdBreathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBB008D26A51AE900C7AD91 /* holdBreathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holdBreathTests.swift; sourceTree = "<group>"; };
+		3DBB008F26A51AE900C7AD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBB009426A51AE900C7AD91 /* holdBreathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = holdBreathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBB009826A51AE900C7AD91 /* holdBreathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holdBreathUITests.swift; sourceTree = "<group>"; };
+		3DBB009A26A51AE900C7AD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBB00A626A52F7B00C7AD91 /* training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = training.swift; sourceTree = "<group>"; };
+		3DBB00A826A52FA900C7AD91 /* choiseTraining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiseTraining.swift; sourceTree = "<group>"; };
+		3DBB00AA26A52FC400C7AD91 /* holding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holding.swift; sourceTree = "<group>"; };
+		3DBB00AC26A5300A00C7AD91 /* setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting.swift; sourceTree = "<group>"; };
+		3DBB00AE26A56FA000C7AD91 /* breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = breath.mp3; sourceTree = "<group>"; };
+		3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = holdBreath.mp3; sourceTree = "<group>"; };
+		3DF838CB26A7CF9F00C57680 /* done.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = done.mp3; path = ../../../Downloads/done.mp3; sourceTree = "<group>"; };
+		3DF838D526A85F7900C57680 /* prepareTime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prepareTime.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DBB007026A51AE400C7AD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBB008626A51AE800C7AD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBB009126A51AE900C7AD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DBB006A26A51AE400C7AD91 = {
+			isa = PBXGroup;
+			children = (
+				3DBB007526A51AE400C7AD91 /* holdBreath */,
+				3DBB008C26A51AE900C7AD91 /* holdBreathTests */,
+				3DBB009726A51AE900C7AD91 /* holdBreathUITests */,
+				3DBB007426A51AE400C7AD91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DBB007426A51AE400C7AD91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB007326A51AE400C7AD91 /* holdBreath.app */,
+				3DBB008926A51AE800C7AD91 /* holdBreathTests.xctest */,
+				3DBB009426A51AE900C7AD91 /* holdBreathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DBB007526A51AE400C7AD91 /* holdBreath */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB007626A51AE400C7AD91 /* AppDelegate.swift */,
+				3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */,
+				3DBB00A626A52F7B00C7AD91 /* training.swift */,
+				3DBB00A826A52FA900C7AD91 /* choiseTraining.swift */,
+				3DBB00AA26A52FC400C7AD91 /* holding.swift */,
+				3DBB00AC26A5300A00C7AD91 /* setting.swift */,
+				3DBB007C26A51AE400C7AD91 /* Main.storyboard */,
+				3DBB007F26A51AE800C7AD91 /* Assets.xcassets */,
+				3DBB008126A51AE800C7AD91 /* LaunchScreen.storyboard */,
+				3DBB008426A51AE800C7AD91 /* Info.plist */,
+				3DBB00AE26A56FA000C7AD91 /* breath.mp3 */,
+				3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */,
+				3DF838CB26A7CF9F00C57680 /* done.mp3 */,
+				3DF838D526A85F7900C57680 /* prepareTime.mp3 */,
+			);
+			path = holdBreath;
+			sourceTree = "<group>";
+		};
+		3DBB008C26A51AE900C7AD91 /* holdBreathTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB008D26A51AE900C7AD91 /* holdBreathTests.swift */,
+				3DBB008F26A51AE900C7AD91 /* Info.plist */,
+			);
+			path = holdBreathTests;
+			sourceTree = "<group>";
+		};
+		3DBB009726A51AE900C7AD91 /* holdBreathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB009826A51AE900C7AD91 /* holdBreathUITests.swift */,
+				3DBB009A26A51AE900C7AD91 /* Info.plist */,
+			);
+			path = holdBreathUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DBB007226A51AE400C7AD91 /* holdBreath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBB009D26A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreath" */;
+			buildPhases = (
+				3DBB006F26A51AE400C7AD91 /* Sources */,
+				3DBB007026A51AE400C7AD91 /* Frameworks */,
+				3DBB007126A51AE400C7AD91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = holdBreath;
+			productName = holdBreath;
+			productReference = 3DBB007326A51AE400C7AD91 /* holdBreath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DBB008826A51AE800C7AD91 /* holdBreathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBB00A026A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreathTests" */;
+			buildPhases = (
+				3DBB008526A51AE800C7AD91 /* Sources */,
+				3DBB008626A51AE800C7AD91 /* Frameworks */,
+				3DBB008726A51AE800C7AD91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DBB008B26A51AE900C7AD91 /* PBXTargetDependency */,
+			);
+			name = holdBreathTests;
+			productName = holdBreathTests;
+			productReference = 3DBB008926A51AE800C7AD91 /* holdBreathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DBB009326A51AE900C7AD91 /* holdBreathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBB00A326A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreathUITests" */;
+			buildPhases = (
+				3DBB009026A51AE900C7AD91 /* Sources */,
+				3DBB009126A51AE900C7AD91 /* Frameworks */,
+				3DBB009226A51AE900C7AD91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DBB009626A51AE900C7AD91 /* PBXTargetDependency */,
+			);
+			name = holdBreathUITests;
+			productName = holdBreathUITests;
+			productReference = 3DBB009426A51AE900C7AD91 /* holdBreathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DBB006B26A51AE400C7AD91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3DBB007226A51AE400C7AD91 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3DBB008826A51AE800C7AD91 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3DBB007226A51AE400C7AD91;
+					};
+					3DBB009326A51AE900C7AD91 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3DBB007226A51AE400C7AD91;
+					};
+				};
+			};
+			buildConfigurationList = 3DBB006E26A51AE400C7AD91 /* Build configuration list for PBXProject "holdBreath" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DBB006A26A51AE400C7AD91;
+			productRefGroup = 3DBB007426A51AE400C7AD91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DBB007226A51AE400C7AD91 /* holdBreath */,
+				3DBB008826A51AE800C7AD91 /* holdBreathTests */,
+				3DBB009326A51AE900C7AD91 /* holdBreathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DBB007126A51AE400C7AD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */,
+				3DBB008326A51AE800C7AD91 /* LaunchScreen.storyboard in Resources */,
+				3DF838CC26A7CF9F00C57680 /* done.mp3 in Resources */,
+				3DBB008026A51AE800C7AD91 /* Assets.xcassets in Resources */,
+				3DF838D626A85F7900C57680 /* prepareTime.mp3 in Resources */,
+				3DBB00B026A56FA000C7AD91 /* breath.mp3 in Resources */,
+				3DBB007E26A51AE400C7AD91 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBB008726A51AE800C7AD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBB009226A51AE900C7AD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DBB006F26A51AE400C7AD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBB00A726A52F7B00C7AD91 /* training.swift in Sources */,
+				3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */,
+				3DBB00AD26A5300A00C7AD91 /* setting.swift in Sources */,
+				3DBB00AB26A52FC400C7AD91 /* holding.swift in Sources */,
+				3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */,
+				3DBB00A926A52FA900C7AD91 /* choiseTraining.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBB008526A51AE800C7AD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBB008E26A51AE900C7AD91 /* holdBreathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBB009026A51AE900C7AD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBB009926A51AE900C7AD91 /* holdBreathUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DBB008B26A51AE900C7AD91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DBB007226A51AE400C7AD91 /* holdBreath */;
+			targetProxy = 3DBB008A26A51AE900C7AD91 /* PBXContainerItemProxy */;
+		};
+		3DBB009626A51AE900C7AD91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DBB007226A51AE400C7AD91 /* holdBreath */;
+			targetProxy = 3DBB009526A51AE900C7AD91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DBB007C26A51AE400C7AD91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBB007D26A51AE400C7AD91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBB008126A51AE800C7AD91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBB008226A51AE800C7AD91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DBB009B26A51AE900C7AD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DBB009C26A51AE900C7AD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DBB009E26A51AE900C7AD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZT54R9366;
+				INFOPLIST_FILE = holdBreath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DBB009F26A51AE900C7AD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZT54R9366;
+				INFOPLIST_FILE = holdBreath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DBB00A126A51AE900C7AD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZT54R9366;
+				INFOPLIST_FILE = holdBreathTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/holdBreath.app/holdBreath";
+			};
+			name = Debug;
+		};
+		3DBB00A226A51AE900C7AD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZT54R9366;
+				INFOPLIST_FILE = holdBreathTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/holdBreath.app/holdBreath";
+			};
+			name = Release;
+		};
+		3DBB00A426A51AE900C7AD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZT54R9366;
+				INFOPLIST_FILE = holdBreathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = holdBreath;
+			};
+			name = Debug;
+		};
+		3DBB00A526A51AE900C7AD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZT54R9366;
+				INFOPLIST_FILE = holdBreathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = holdBreath;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DBB006E26A51AE400C7AD91 /* Build configuration list for PBXProject "holdBreath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBB009B26A51AE900C7AD91 /* Debug */,
+				3DBB009C26A51AE900C7AD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBB009D26A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBB009E26A51AE900C7AD91 /* Debug */,
+				3DBB009F26A51AE900C7AD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBB00A026A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBB00A126A51AE900C7AD91 /* Debug */,
+				3DBB00A226A51AE900C7AD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBB00A326A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBB00A426A51AE900C7AD91 /* Debug */,
+				3DBB00A526A51AE900C7AD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DBB006B26A51AE400C7AD91 /* Project object */;
+}
