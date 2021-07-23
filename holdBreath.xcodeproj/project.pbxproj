@@ -22,6 +22,8 @@
 		3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */; };
 		3DF838CC26A7CF9F00C57680 /* done.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838CB26A7CF9F00C57680 /* done.mp3 */; };
 		3DF838D626A85F7900C57680 /* prepareTime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D526A85F7900C57680 /* prepareTime.mp3 */; };
+		3DF838DA26A9288500C57680 /* moreThenPB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D926A9288500C57680 /* moreThenPB.mp3 */; };
+		3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838DB26A98FE100C57680 /* ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = holdBreath.mp3; sourceTree = "<group>"; };
 		3DF838CB26A7CF9F00C57680 /* done.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = done.mp3; path = ../../../Downloads/done.mp3; sourceTree = "<group>"; };
 		3DF838D526A85F7900C57680 /* prepareTime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prepareTime.mp3; sourceTree = "<group>"; };
+		3DF838D926A9288500C57680 /* moreThenPB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moreThenPB.mp3; sourceTree = "<group>"; };
+		3DF838DB26A98FE100C57680 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */,
 				3DF838CB26A7CF9F00C57680 /* done.mp3 */,
 				3DF838D526A85F7900C57680 /* prepareTime.mp3 */,
+				3DF838D926A9288500C57680 /* moreThenPB.mp3 */,
+				3DF838DB26A98FE100C57680 /* ding.mp3 */,
 			);
 			path = holdBreath;
 			sourceTree = "<group>";
@@ -252,7 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF838DA26A9288500C57680 /* moreThenPB.mp3 in Resources */,
 				3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */,
+				3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */,
 				3DBB008326A51AE800C7AD91 /* LaunchScreen.storyboard in Resources */,
 				3DF838CC26A7CF9F00C57680 /* done.mp3 in Resources */,
 				3DBB008026A51AE800C7AD91 /* Assets.xcassets in Resources */,
@@ -474,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -493,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -106,7 +106,7 @@
                                     <action selector="switchHistory:" destination="6Ci-p5-ghG" eventType="valueChanged" id="fv3-Or-cCl"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="超過歷史最佳時提醒我" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JO-O7-RhD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="超過歷史最佳時提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JO-O7-RhD">
                                 <rect key="frame" x="19" y="250" width="227" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -156,10 +156,10 @@
                                     <action selector="switchSecond:" destination="6Ci-p5-ghG" eventType="valueChanged" id="oyC-SO-bHI"/>
                                 </connections>
                             </switch>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-jw-br5">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-jw-br5">
                                 <rect key="frame" x="80" y="284" width="46" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="每經過" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thM-e2-yDN">
@@ -169,7 +169,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時提醒我" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uut-hP-cBP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="秒時提醒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uut-hP-cBP">
                                 <rect key="frame" x="130" y="291" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -192,11 +192,11 @@
                         <outlet property="btnStart" destination="DDk-e7-p6k" id="5a1-LQ-QVo"/>
                         <outlet property="labelBest" destination="OaC-uF-nSy" id="Kzo-xR-Nke"/>
                         <outlet property="labelCurrentTime" destination="iMJ-49-F28" id="r55-Nt-Avf"/>
-                        <outlet property="labelEverySecond" destination="PSO-jw-br5" id="C8u-Hl-X7D"/>
                         <outlet property="labelHiostoryTime" destination="OaC-uF-nSy" id="sFI-JE-USX"/>
                         <outlet property="switchEverysecond" destination="X6e-7a-XcJ" id="7fz-uP-SsO"/>
                         <outlet property="switchHistory" destination="DX1-OQ-uOO" id="5ok-WI-N7r"/>
                         <outlet property="tableHistory" destination="IEt-1r-dpo" id="HdG-PL-2i1"/>
+                        <outlet property="textEverySecond" destination="PSO-jw-br5" id="C8u-Hl-X7D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNL-zL-cSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,11 +7,11 @@
 
 import UIKit
 import AVFoundation
-class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudioPlayerDelegate {
-
+class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudioPlayerDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
     var signal = 0
     var holdtime = 0
-//    var prepareTime = 10
+    var everytime = ["15","30","60"]
+    var currentObjectBottomYPosition :CGFloat!
     weak var timer:Timer!
     var audioplayer:AVAudioPlayer!
     var homeDataCenter:UserDefaults?
@@ -19,11 +19,13 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
     var historyBestRecord = 0
     let date = Date()
     let dateFormatter = DateFormatter()
+    let fullScreenSize = UIScreen.main.bounds.size
+    var pickView:UIPickerView?
     var dateString:String?
     @IBOutlet weak var switchHistory: UISwitch!
     @IBOutlet weak var switchEverysecond: UISwitch!
     @IBOutlet weak var labelBest: UILabel!
-    @IBOutlet weak var labelEverySecond: UITextField!
+    @IBOutlet weak var textEverySecond: UITextField!
     @IBOutlet weak var labelCurrentTime: UILabel!
     @IBOutlet weak var labelHiostoryTime: UILabel!
     @IBOutlet weak var tableHistory: UITableView!
@@ -66,21 +68,15 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
                     }
                 }
             }
+            self.holdtime = 0
             self.labelBest.text = String(format: "%02d:%02d", self.historyBestRecord / 60, self.historyBestRecord  % 60)
             self.tableHistory.reloadData()
         }
         
     }
     @IBAction func switchHistory(_ sender: UISwitch) {
-        //切換要不要在到達歷史最佳紀錄時提醒
-        if sender.isOn == true{
-            if self.holdtime == self.historyBestRecord{
-                print("達到歷史最佳")
-            }
-        }
     }
     @IBAction func switchSecond(_ sender: UISwitch) {
-        //每幾秒提醒使用者
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,30 +110,41 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
         self.tableHistory.delegate = self
         self.tableHistory.rowHeight = 100
         self.tableHistory.reloadData()
+        self.pickView = UIPickerView(frame: CGRect(x: 0, y: fullScreenSize.height * 0.3, width: fullScreenSize.width, height: 150))
+        self.pickView?.delegate = self
+        self.pickView?.dataSource = self
+        self.textEverySecond.inputView = self.pickView
     }
     @objc func countUP(){
-//        if prepareTime >= 0 {
-//            if prepareTime == 0{
-//                do{
-//                    self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "holdBreath", withExtension: "mp3")!)
-//                }
-//                catch{
-//                    print("音樂載入錯誤\(error)")
-//                }
-//                self.audioplayer.play()
-//            }
-//            print("開始倒數\(prepareTime)")
-//            self.labelCurrentTime.text = String(format: "%02d:%02d", self.prepareTime / 60, self.prepareTime  % 60)
-//            prepareTime -= 1
-//        }
-        
             //播放聲音開始計時
             self.holdtime += 1
             self.labelCurrentTime.text = String(format: "%02d:%02d", self.holdtime / 60, self.holdtime  % 60)
+        if self.switchHistory.isOn == true{
+            if self.holdtime == historyBestRecord + 1{
+                do{
+                    self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "moreThenPB", withExtension: "mp3")!)
+                }
+                catch{
+                    print("音樂載入錯誤\(error)")
+                }
+                self.audioplayer.play()
+            }
+            if self.switchEverysecond.isOn == true && self.textEverySecond != nil{
+                if holdtime % Int(self.textEverySecond.text!)! == 0 {
+                    print("經過設定時間")
+                    do{
+                        self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "ding", withExtension: "mp3")!)
+                    }
+                    catch{
+                        print("音樂載入錯誤\(error)")
+                    }
+                    self.audioplayer.play()
+                }
+            }
+        }
             print("開始正數\(holdtime)")
-        
-
     }
+    //table函數區
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //有幾個紀錄
         return self.recordArray!.count
@@ -157,6 +164,23 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
         
         cell.detailTextLabel?.textColor = UIColor.black
         return cell
+        
+    }
+    
+    //pickView函數區
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.everytime.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.everytime[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.textEverySecond.text = self.everytime[row]
+        self.view.endEditing(true)
         
     }
 }
