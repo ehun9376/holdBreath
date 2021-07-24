@@ -8,9 +8,10 @@
 import UIKit
 import UserNotifications
 class setting: UIViewController {
-    var little_data_center:UserDefaults?
+    var homeDataCenter:UserDefaults?
     var maxTime = 0
     var weekday:[[String:String]]?
+    var setTime:[String]?
     var notifsignal = 0
     @IBOutlet weak var labelSetTime: UILabel!
     
@@ -28,27 +29,30 @@ class setting: UIViewController {
     
     @IBOutlet weak var switchOulet: UISwitch!
     @IBAction func switchNotif(_ sender: UISwitch) {
-        
-        if sender.isOn{
-            let content = UNMutableNotificationContent()
-            content.title = "推波測試"
-            content.badge = 3
-            content.sound = .default
-            content.categoryIdentifier = "trainningNotif"
-            var date = DateComponents()
-            date.month = 7
-            date.day = 24
-            date.hour = 9
-            date.minute = 43
-            let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-            let request = UNNotificationRequest(identifier: "trainningNotif", content: content, trigger: trigger)
-            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-            little_data_center?.setValue(1, forKey: "openNotif")
+        if sender.isOn && self.weekday != []{
+            print("通知設定區")
+            for (n,day) in self.weekday!.enumerated(){
+                if day["check"] == "true"{
+                    let content = UNMutableNotificationContent()
+                    content.title = "準備開始訓練了"
+                    content.badge = 1
+                    content.sound = .default
+                    var date = DateComponents()
+                    date.weekday = n+1
+                    date.hour = Int(self.setTime![0])
+                    date.minute = Int(self.setTime![1])
+                    let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+                    let request = UNNotificationRequest(identifier: "week\(date.weekday!)", content: content, trigger: trigger)
+                    UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+                    print(trigger)
+                }
+            }
+            homeDataCenter?.setValue(1, forKey: "openNotif")
             print("開關打開")
         }
         else{
             UNUserNotificationCenter.current().removeAllDeliveredNotifications()
-            little_data_center?.setValue(0, forKey: "openNotif")
+            homeDataCenter?.setValue(0, forKey: "openNotif")
             print("開關關閉")
         }
     }
@@ -67,23 +71,32 @@ class setting: UIViewController {
         let infoVC = self.storyboard?.instantiateViewController(identifier: "infoVC") as? info
         self.show(infoVC!, sender: nil)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.weekday = homeDataCenter?.array(forKey: "weekNotif") as? [[String : String]] ?? []
+        self.setTime = self.homeDataCenter?.string(forKey: "timeNotif")?.components(separatedBy: ":") ?? []
+        print(self.weekday!)
+        print(self.setTime!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        little_data_center = UserDefaults.init()
-        self.maxTime = little_data_center?.integer(forKey: "canHoldSecond") ?? 0
+        homeDataCenter = UserDefaults.init()
+        self.maxTime = homeDataCenter?.integer(forKey: "canHoldSecond") ?? 0
         self.labelSetTime.text = String(format: "%02d:%02d", self.maxTime / 60, self.maxTime % 60)
         self.sliderTimeOutlet.value = Float(self.maxTime)
-        self.notifsignal = little_data_center?.integer(forKey: "openNotif") ?? 0
+        self.notifsignal = homeDataCenter?.integer(forKey: "openNotif") ?? 0
         if self.notifsignal == 0{
             self.switchOulet.isOn = false
         }else{
             self.switchOulet.isOn = true
         }
+        
+
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         print("使用者秒數\(self.maxTime)以紀錄")
-        little_data_center?.setValue(self.maxTime, forKey: "canHoldSecond")
+        homeDataCenter?.setValue(self.maxTime, forKey: "canHoldSecond")
 
     }
     

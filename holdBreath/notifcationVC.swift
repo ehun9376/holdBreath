@@ -12,10 +12,11 @@ class notifcationVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     @IBOutlet weak var textNotifTime: UITextField!
     let pickview = UIDatePicker()
     let fullScreenSize = UIScreen.main.bounds.size
-    let time = Date()
+    let currenttime = Date()
+    var setTime = Date()
     let formatter = DateFormatter()
     var homeDataCenter:UserDefaults?
-    var weekSource = [["week":"禮拜一","check":"false"],["week":"禮拜二","check":"false"],["week":"禮拜三","check":"false"],["week":"禮拜四","check":"false"],["week":"禮拜五","check":"false"],["week":"禮拜六","check":"false"],["week":"禮拜日","check":"false"]]
+    var weekSource = [["week":"禮拜日","check":"false"],["week":"禮拜一","check":"false"],["week":"禮拜二","check":"false"],["week":"禮拜三","check":"false"],["week":"禮拜四","check":"false"],["week":"禮拜五","check":"false"],["week":"禮拜六","check":"false"],]
     var week:[[String:String]]?
     
 
@@ -30,22 +31,21 @@ class notifcationVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
         self.formatter.locale = Locale(identifier: "zh_Hant_TW")
         self.formatter.timeZone = TimeZone(identifier: "Asia/Taipei")
         self.formatter.dateFormat = "HH:mm"
-        self.textNotifTime.text = formatter.string(from: time)
         self.pickview.datePickerMode = .time
         self.pickview.addTarget(self, action: #selector(pickerValueChang), for: .valueChanged)
         self.pickview.frame.size = CGSize(width: 0, height: 250)
         self.textNotifTime.inputView = pickview
         tableNotif.reloadData()
-//        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge]) { granted, error in
-//            if granted {
-//                print("同意")
-//            }
-//
-//        }
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.textNotifTime.text = self.homeDataCenter?.string(forKey: "timeNotif") ?? formatter.string(from: currenttime)
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         self.homeDataCenter?.setValue(self.week, forKey: "weekNotif")
+        self.homeDataCenter?.setValue(self.textNotifTime.text, forKey: "timeNotif")
     }
     @objc func pickerValueChang(sender: UIDatePicker){
         self.textNotifTime.text = formatter.string(from: sender.date)
