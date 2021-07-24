@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29D78012CB67B2597EF34BE4 /* Pods_holdBreath_holdBreathUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42242C6CA291D727FD716928 /* Pods_holdBreath_holdBreathUITests.framework */; };
+		2EC3A95CC6B4A28A9F51EE0E /* Pods_holdBreathTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F6FC99DA51ED5FD55B691 /* Pods_holdBreathTests.framework */; };
 		3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007626A51AE400C7AD91 /* AppDelegate.swift */; };
 		3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */; };
 		3DBB007E26A51AE400C7AD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB007C26A51AE400C7AD91 /* Main.storyboard */; };
@@ -20,12 +22,15 @@
 		3DBB00AD26A5300A00C7AD91 /* setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB00AC26A5300A00C7AD91 /* setting.swift */; };
 		3DBB00B026A56FA000C7AD91 /* breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB00AE26A56FA000C7AD91 /* breath.mp3 */; };
 		3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */; };
+		3DF3C42E26AC4291006F2BEB /* limit.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3DF3C42C26AC4291006F2BEB /* limit.jpeg */; };
+		3DF3C42F26AC4291006F2BEB /* train.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3DF3C42D26AC4291006F2BEB /* train.jpeg */; };
 		3DF838CC26A7CF9F00C57680 /* done.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838CB26A7CF9F00C57680 /* done.mp3 */; };
 		3DF838D626A85F7900C57680 /* prepareTime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D526A85F7900C57680 /* prepareTime.mp3 */; };
 		3DF838DA26A9288500C57680 /* moreThenPB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D926A9288500C57680 /* moreThenPB.mp3 */; };
 		3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838DB26A98FE100C57680 /* ding.mp3 */; };
 		3DF838DE26AA567400C57680 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DD26AA567400C57680 /* info.swift */; };
 		3DF838E026AA627500C57680 /* notifcationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DF26AA627500C57680 /* notifcationVC.swift */; };
+		93FAD80AAD333FB68F32403A /* Pods_holdBreath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511548F0990449D558715D39 /* Pods_holdBreath.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17727DF800CDE0350E04BE9A /* Pods-holdBreathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreathTests.debug.xcconfig"; path = "Target Support Files/Pods-holdBreathTests/Pods-holdBreathTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29ACFC38AB1BF978418923FD /* Pods-holdBreath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreath.release.xcconfig"; path = "Target Support Files/Pods-holdBreath/Pods-holdBreath.release.xcconfig"; sourceTree = "<group>"; };
 		3DBB007326A51AE400C7AD91 /* holdBreath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holdBreath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBB007626A51AE400C7AD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,12 +72,45 @@
 		3DBB00AC26A5300A00C7AD91 /* setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting.swift; sourceTree = "<group>"; };
 		3DBB00AE26A56FA000C7AD91 /* breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = breath.mp3; sourceTree = "<group>"; };
 		3DBB00AF26A56FA000C7AD91 /* holdBreath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = holdBreath.mp3; sourceTree = "<group>"; };
+		3DDBBE6326AC53F600B3BE81 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3DDBBE6526AC540000B3BE81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3DDBBE6726AC540700B3BE81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3DDBBE6926AC540E00B3BE81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DDBBE6B26AC541500B3BE81 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3DDBBE6D26AC541B00B3BE81 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		3DDBBE6F26AC542800B3BE81 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		3DDBBE7126AC543100B3BE81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3DDBBE7326AC543700B3BE81 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3DDBBE7526AC544000B3BE81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3DF3C42C26AC4291006F2BEB /* limit.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = limit.jpeg; sourceTree = "<group>"; };
+		3DF3C42D26AC4291006F2BEB /* train.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = train.jpeg; sourceTree = "<group>"; };
+		3DF3C43026AC4E87006F2BEB /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleUtilities.xcframework"; sourceTree = "<group>"; };
+		3DF3C43126AC4E87006F2BEB /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/PromisesObjC.xcframework"; sourceTree = "<group>"; };
+		3DF3C43226AC4E88006F2BEB /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/UserMessagingPlatform.xcframework"; sourceTree = "<group>"; };
+		3DF3C43426AC4E88006F2BEB /* Promises-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
+		3DF3C43526AC4E88006F2BEB /* NanoPB-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
+		3DF3C43626AC4E88006F2BEB /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
+		3DF3C43726AC4E88006F2BEB /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
+		3DF3C43826AC4E88006F2BEB /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/nanopb.xcframework"; sourceTree = "<group>"; };
+		3DF3C43926AC4E88006F2BEB /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleAppMeasurement.xcframework"; sourceTree = "<group>"; };
+		3DF3C43A26AC4E88006F2BEB /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		3DF3C43B26AC4F09006F2BEB /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleAppMeasurement.xcframework/ios-arm64_armv7/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		3DF3C43D26AC4F2C006F2BEB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleMobileAds.xcframework/ios-arm64_armv7/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		3DF3C43F26AC4F47006F2BEB /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleUtilities.xcframework/ios-arm64_armv7/GoogleUtilities.framework"; sourceTree = "<group>"; };
+		3DF3C44126AC4F61006F2BEB /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/nanopb.xcframework/ios-arm64_armv7/nanopb.framework"; sourceTree = "<group>"; };
 		3DF838CB26A7CF9F00C57680 /* done.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = done.mp3; path = ../../../Downloads/done.mp3; sourceTree = "<group>"; };
 		3DF838D526A85F7900C57680 /* prepareTime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prepareTime.mp3; sourceTree = "<group>"; };
 		3DF838D926A9288500C57680 /* moreThenPB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moreThenPB.mp3; sourceTree = "<group>"; };
 		3DF838DB26A98FE100C57680 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 		3DF838DD26AA567400C57680 /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
 		3DF838DF26AA627500C57680 /* notifcationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notifcationVC.swift; sourceTree = "<group>"; };
+		42242C6CA291D727FD716928 /* Pods_holdBreath_holdBreathUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holdBreath_holdBreathUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511548F0990449D558715D39 /* Pods_holdBreath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holdBreath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557F6FC99DA51ED5FD55B691 /* Pods_holdBreathTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holdBreathTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BDAB378D2368C1A0651FD5 /* Pods-holdBreath-holdBreathUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreath-holdBreathUITests.debug.xcconfig"; path = "Target Support Files/Pods-holdBreath-holdBreathUITests/Pods-holdBreath-holdBreathUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC7930E86E97B26B62F04734 /* Pods-holdBreath-holdBreathUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreath-holdBreathUITests.release.xcconfig"; path = "Target Support Files/Pods-holdBreath-holdBreathUITests/Pods-holdBreath-holdBreathUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7565E2890293C563E6061A8 /* Pods-holdBreath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreath.debug.xcconfig"; path = "Target Support Files/Pods-holdBreath/Pods-holdBreath.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD85C3E3DED2B174758240D /* Pods-holdBreathTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreathTests.release.xcconfig"; path = "Target Support Files/Pods-holdBreathTests/Pods-holdBreathTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FAD80AAD333FB68F32403A /* Pods_holdBreath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC3A95CC6B4A28A9F51EE0E /* Pods_holdBreathTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D78012CB67B2597EF34BE4 /* Pods_holdBreath_holdBreathUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +148,8 @@
 				3DBB008C26A51AE900C7AD91 /* holdBreathTests */,
 				3DBB009726A51AE900C7AD91 /* holdBreathUITests */,
 				3DBB007426A51AE400C7AD91 /* Products */,
+				E257F7D5183637CF711BB356 /* Pods */,
+				4E004D45FD57EE43D95A40CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +184,8 @@
 				3DF838D526A85F7900C57680 /* prepareTime.mp3 */,
 				3DF838D926A9288500C57680 /* moreThenPB.mp3 */,
 				3DF838DB26A98FE100C57680 /* ding.mp3 */,
+				3DF3C42C26AC4291006F2BEB /* limit.jpeg */,
+				3DF3C42D26AC4291006F2BEB /* train.jpeg */,
 			);
 			path = holdBreath;
 			sourceTree = "<group>";
@@ -161,6 +208,62 @@
 			path = holdBreathUITests;
 			sourceTree = "<group>";
 		};
+		3DF3C43326AC4E88006F2BEB /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				3DF3C43426AC4E88006F2BEB /* Promises-LICENSE */,
+				3DF3C43526AC4E88006F2BEB /* NanoPB-LICENSE */,
+				3DF3C43626AC4E88006F2BEB /* OpenMeasurement-LICENSE */,
+				3DF3C43726AC4E88006F2BEB /* GoogleUtilities-LICENSE */,
+			);
+			name = Licenses;
+			path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/Licenses";
+			sourceTree = "<group>";
+		};
+		4E004D45FD57EE43D95A40CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DDBBE7526AC544000B3BE81 /* SystemConfiguration.framework */,
+				3DDBBE7326AC543700B3BE81 /* StoreKit.framework */,
+				3DDBBE7126AC543100B3BE81 /* MessageUI.framework */,
+				3DDBBE6F26AC542800B3BE81 /* EventKit.framework */,
+				3DDBBE6D26AC541B00B3BE81 /* EventKitUI.framework */,
+				3DDBBE6B26AC541500B3BE81 /* CoreTelephony.framework */,
+				3DDBBE6926AC540E00B3BE81 /* CoreGraphics.framework */,
+				3DDBBE6726AC540700B3BE81 /* AVFoundation.framework */,
+				3DDBBE6526AC540000B3BE81 /* AudioToolbox.framework */,
+				3DDBBE6326AC53F600B3BE81 /* AdSupport.framework */,
+				3DF3C44126AC4F61006F2BEB /* nanopb.framework */,
+				3DF3C43F26AC4F47006F2BEB /* GoogleUtilities.framework */,
+				3DF3C43D26AC4F2C006F2BEB /* GoogleMobileAds.framework */,
+				3DF3C43B26AC4F09006F2BEB /* GoogleAppMeasurement.framework */,
+				3DF3C43926AC4E88006F2BEB /* GoogleAppMeasurement.xcframework */,
+				3DF3C43A26AC4E88006F2BEB /* GoogleMobileAds.xcframework */,
+				3DF3C43026AC4E87006F2BEB /* GoogleUtilities.xcframework */,
+				3DF3C43326AC4E88006F2BEB /* Licenses */,
+				3DF3C43826AC4E88006F2BEB /* nanopb.xcframework */,
+				3DF3C43126AC4E87006F2BEB /* PromisesObjC.xcframework */,
+				3DF3C43226AC4E88006F2BEB /* UserMessagingPlatform.xcframework */,
+				511548F0990449D558715D39 /* Pods_holdBreath.framework */,
+				42242C6CA291D727FD716928 /* Pods_holdBreath_holdBreathUITests.framework */,
+				557F6FC99DA51ED5FD55B691 /* Pods_holdBreathTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E257F7D5183637CF711BB356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7565E2890293C563E6061A8 /* Pods-holdBreath.debug.xcconfig */,
+				29ACFC38AB1BF978418923FD /* Pods-holdBreath.release.xcconfig */,
+				62BDAB378D2368C1A0651FD5 /* Pods-holdBreath-holdBreathUITests.debug.xcconfig */,
+				BC7930E86E97B26B62F04734 /* Pods-holdBreath-holdBreathUITests.release.xcconfig */,
+				17727DF800CDE0350E04BE9A /* Pods-holdBreathTests.debug.xcconfig */,
+				EDD85C3E3DED2B174758240D /* Pods-holdBreathTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DBB009D26A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreath" */;
 			buildPhases = (
+				D26FBEB428EF96EECB293130 /* [CP] Check Pods Manifest.lock */,
 				3DBB006F26A51AE400C7AD91 /* Sources */,
 				3DBB007026A51AE400C7AD91 /* Frameworks */,
 				3DBB007126A51AE400C7AD91 /* Resources */,
+				FBD32C3A4625A51DA60C94FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DBB00A026A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreathTests" */;
 			buildPhases = (
+				191B30E49D9399FD56F04614 /* [CP] Check Pods Manifest.lock */,
 				3DBB008526A51AE800C7AD91 /* Sources */,
 				3DBB008626A51AE800C7AD91 /* Frameworks */,
 				3DBB008726A51AE800C7AD91 /* Resources */,
@@ -203,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DBB00A326A51AE900C7AD91 /* Build configuration list for PBXNativeTarget "holdBreathUITests" */;
 			buildPhases = (
+				E1A62A8F96457788E3C74601 /* [CP] Check Pods Manifest.lock */,
 				3DBB009026A51AE900C7AD91 /* Sources */,
 				3DBB009126A51AE900C7AD91 /* Frameworks */,
 				3DBB009226A51AE900C7AD91 /* Resources */,
+				E7EFD5F789F927175DA5AE9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,7 +376,9 @@
 				3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */,
 				3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */,
 				3DBB008326A51AE800C7AD91 /* LaunchScreen.storyboard in Resources */,
+				3DF3C42F26AC4291006F2BEB /* train.jpeg in Resources */,
 				3DF838CC26A7CF9F00C57680 /* done.mp3 in Resources */,
+				3DF3C42E26AC4291006F2BEB /* limit.jpeg in Resources */,
 				3DBB008026A51AE800C7AD91 /* Assets.xcassets in Resources */,
 				3DF838D626A85F7900C57680 /* prepareTime.mp3 in Resources */,
 				3DBB00B026A56FA000C7AD91 /* breath.mp3 in Resources */,
@@ -291,6 +401,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		191B30E49D9399FD56F04614 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-holdBreathTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26FBEB428EF96EECB293130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-holdBreath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A62A8F96457788E3C74601 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-holdBreath-holdBreathUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7EFD5F789F927175DA5AE9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-holdBreath-holdBreathUITests/Pods-holdBreath-holdBreathUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-holdBreath-holdBreathUITests/Pods-holdBreath-holdBreathUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-holdBreath-holdBreathUITests/Pods-holdBreath-holdBreathUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD32C3A4625A51DA60C94FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-holdBreath/Pods-holdBreath-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-holdBreath/Pods-holdBreath-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-holdBreath/Pods-holdBreath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DBB006F26A51AE400C7AD91 /* Sources */ = {
@@ -477,6 +690,7 @@
 		};
 		3DBB009E26A51AE900C7AD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7565E2890293C563E6061A8 /* Pods-holdBreath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +700,64 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +768,7 @@
 		};
 		3DBB009F26A51AE900C7AD91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29ACFC38AB1BF978418923FD /* Pods-holdBreath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +779,64 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -515,6 +846,7 @@
 		};
 		3DBB00A126A51AE900C7AD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17727DF800CDE0350E04BE9A /* Pods-holdBreathTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +869,7 @@
 		};
 		3DBB00A226A51AE900C7AD91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD85C3E3DED2B174758240D /* Pods-holdBreathTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +892,7 @@
 		};
 		3DBB00A426A51AE900C7AD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BDAB378D2368C1A0651FD5 /* Pods-holdBreath-holdBreathUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +913,7 @@
 		};
 		3DBB00A526A51AE900C7AD91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7930E86E97B26B62F04734 /* Pods-holdBreath-holdBreathUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

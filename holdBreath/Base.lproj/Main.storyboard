@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--設定-->
         <scene sceneID="EOU-Cy-rQc">
             <objects>
                 <navigationController id="4Tx-zP-xbj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xBy-wG-cpK"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="gearshape" catalog="system" id="xBy-wG-cpK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bxC-9g-9TU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -144,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="2962.3188405797105" y="-22.098214285714285"/>
         </scene>
-        <!--測試極限-->
+        <!--找出極限-->
         <scene sceneID="XDT-bc-qPg">
             <objects>
                 <viewController id="6Ci-p5-ghG" customClass="holding" customModule="holdBreath" customModuleProvider="target" sceneMemberID="viewController">
@@ -251,7 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="W4A-CX-SmI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="測試極限" id="l00-jv-qcr"/>
+                    <tabBarItem key="tabBarItem" title="找出極限" image="nose.fill" catalog="system" id="l00-jv-qcr"/>
                     <connections>
                         <outlet property="btnStart" destination="DDk-e7-p6k" id="5a1-LQ-QVo"/>
                         <outlet property="labelBest" destination="OaC-uF-nSy" id="Kzo-xR-Nke"/>
@@ -271,7 +271,7 @@
         <scene sceneID="LCN-bD-epY">
             <objects>
                 <navigationController id="LQx-UK-YMx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="訓練" id="Ibh-T9-hFH"/>
+                    <tabBarItem key="tabBarItem" title="訓練" image="bolt.fill" catalog="system" id="Ibh-T9-hFH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8oT-YK-pTO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -525,13 +525,26 @@
                     <view key="view" contentMode="scaleToFill" id="qBi-Ey-r6k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t3m-jm-DgL">
+                                <rect key="frame" x="20" y="121" width="374" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g83-q1-wcA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="textviewInfo" destination="t3m-jm-DgL" id="4nR-HF-7pT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="767-gS-wc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="-2033"/>
+            <point key="canvasLocation" x="1724.6376811594205" y="-2058.4821428571427"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aDd-qM-lVu">
@@ -559,6 +572,12 @@
     <resources>
         <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
         <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
+        <image name="bolt.fill" catalog="system" width="101" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="nose.fill" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

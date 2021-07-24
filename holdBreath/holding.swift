@@ -52,25 +52,22 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
             timer.invalidate()
             print("紀錄是\(holdtime)")
             self.recordArray?.append(["date":"\(self.dateString!)","record":"\(holdtime)"])
-            homeDataCenter!.setValue(self.recordArray, forKey: "record")
-//            self.prepareTime = 10
             self.labelCurrentTime.text = String(format:"00:00")
-//            if self.recordArray?.contains([:]) == true{
-//                self.recordArray?.remove(at: 0)
-//            }
             if self.recordArray != [[:]]{
-                for record in self.recordArray! {
+                for (n,record) in self.recordArray!.enumerated() {
                     if record == [:]{
-                        self.recordArray!.remove(at: 0)
+                        self.recordArray!.remove(at: n)
                         break
                     }
                     if Int(record["record"]!)! > self.historyBestRecord{
                         self.historyBestRecord = Int(record["record"]!)!
                     }
                 }
+                homeDataCenter!.setValue(self.recordArray, forKey: "record")
             }
             self.holdtime = 0
             self.labelBest.text = String(format: "%02d:%02d", self.historyBestRecord / 60, self.historyBestRecord  % 60)
+            homeDataCenter!.setValue(self.recordArray, forKey: "record")
             self.tableHistory.reloadData()
         }
         
@@ -79,6 +76,7 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
     }
     @IBAction func switchSecond(_ sender: UISwitch) {
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //audioPlayer區
