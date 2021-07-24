@@ -24,6 +24,8 @@
 		3DF838D626A85F7900C57680 /* prepareTime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D526A85F7900C57680 /* prepareTime.mp3 */; };
 		3DF838DA26A9288500C57680 /* moreThenPB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838D926A9288500C57680 /* moreThenPB.mp3 */; };
 		3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838DB26A98FE100C57680 /* ding.mp3 */; };
+		3DF838DE26AA567400C57680 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DD26AA567400C57680 /* info.swift */; };
+		3DF838E026AA627500C57680 /* notifcationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DF26AA627500C57680 /* notifcationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		3DF838D526A85F7900C57680 /* prepareTime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prepareTime.mp3; sourceTree = "<group>"; };
 		3DF838D926A9288500C57680 /* moreThenPB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moreThenPB.mp3; sourceTree = "<group>"; };
 		3DF838DB26A98FE100C57680 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		3DF838DD26AA567400C57680 /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
+		3DF838DF26AA627500C57680 /* notifcationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notifcationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				3DBB00A826A52FA900C7AD91 /* choiseTraining.swift */,
 				3DBB00AA26A52FC400C7AD91 /* holding.swift */,
 				3DBB00AC26A5300A00C7AD91 /* setting.swift */,
+				3DF838DF26AA627500C57680 /* notifcationVC.swift */,
+				3DF838DD26AA567400C57680 /* info.swift */,
 				3DBB007C26A51AE400C7AD91 /* Main.storyboard */,
 				3DBB007F26A51AE800C7AD91 /* Assets.xcassets */,
 				3DBB008126A51AE800C7AD91 /* LaunchScreen.storyboard */,
@@ -293,8 +299,10 @@
 			files = (
 				3DBB00A726A52F7B00C7AD91 /* training.swift in Sources */,
 				3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */,
+				3DF838E026AA627500C57680 /* notifcationVC.swift in Sources */,
 				3DBB00AD26A5300A00C7AD91 /* setting.swift in Sources */,
 				3DBB00AB26A52FC400C7AD91 /* holding.swift in Sources */,
+				3DF838DE26AA567400C57680 /* info.swift in Sources */,
 				3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */,
 				3DBB00A926A52FA900C7AD91 /* choiseTraining.swift in Sources */,
 			);

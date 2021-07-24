@@ -55,12 +55,13 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
             homeDataCenter!.setValue(self.recordArray, forKey: "record")
 //            self.prepareTime = 10
             self.labelCurrentTime.text = String(format:"00:00")
-            if self.recordArray?.contains([:]) == true{
-                self.recordArray?.remove(at: 0)
-            }
+//            if self.recordArray?.contains([:]) == true{
+//                self.recordArray?.remove(at: 0)
+//            }
             if self.recordArray != [[:]]{
                 for record in self.recordArray! {
                     if record == [:]{
+                        self.recordArray!.remove(at: 0)
                         break
                     }
                     if Int(record["record"]!)! > self.historyBestRecord{
@@ -120,7 +121,7 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
             self.holdtime += 1
             self.labelCurrentTime.text = String(format: "%02d:%02d", self.holdtime / 60, self.holdtime  % 60)
         if self.switchHistory.isOn == true{
-            if self.holdtime == historyBestRecord + 1{
+            if historyBestRecord != 0 && self.holdtime == historyBestRecord + 1{
                 do{
                     self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "moreThenPB", withExtension: "mp3")!)
                 }
@@ -129,7 +130,7 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
                 }
                 self.audioplayer.play()
             }
-            if self.switchEverysecond.isOn == true && self.textEverySecond != nil{
+            if self.switchEverysecond.isOn == true && self.textEverySecond.text != ""{
                 if holdtime % Int(self.textEverySecond.text!)! == 0 {
                     print("經過設定時間")
                     do{
@@ -154,7 +155,6 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
         //每個紀錄中的數字，左邊日期，右邊時間
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "mycell")
         if self.recordArray != [[:]]{
-            
             cell.textLabel?.text = String(format: "%02d:%02d", Int(self.recordArray!.reversed()[indexPath.row]["record"]!)! / 60, Int(self.recordArray!.reversed()[indexPath.row]["record"]!)!  % 60)
             cell.detailTextLabel?.text = self.recordArray!.reversed()[indexPath.row]["date"]
         }
