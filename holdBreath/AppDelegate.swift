@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("同意")
             }
         }
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
 

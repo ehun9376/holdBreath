@@ -1,6 +1,7 @@
 import UIKit
 import AVFoundation
-class training: UIViewController,AVAudioPlayerDelegate {
+import GoogleMobileAds
+class training: UIViewController,AVAudioPlayerDelegate, GADBannerViewDelegate {
     var choiseNumber = 0
     var little_data_center:UserDefaults?
     var breathSecond = 150
@@ -13,6 +14,8 @@ class training: UIViewController,AVAudioPlayerDelegate {
     var x = 33
     weak var totalTimer:Timer!
     var totaltime = 0
+    
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var breath1: UILabel!
     @IBOutlet weak var totalTimeLabel: UILabel!
     @IBOutlet weak var breath2: UILabel!
@@ -95,6 +98,10 @@ class training: UIViewController,AVAudioPlayerDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView.adUnitID = "ca-app-pub-1884396062657178/6332490663"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
         little_data_center = UserDefaults.init()
         if Int((little_data_center?.integer(forKey: "canHoldSecond"))!) == 0{
             let alert = UIAlertController(title: "通知", message: "這是你的第一次訓練，請先至設定頁面設定時間", preferredStyle: .alert)

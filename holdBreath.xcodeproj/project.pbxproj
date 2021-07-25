@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		29D78012CB67B2597EF34BE4 /* Pods_holdBreath_holdBreathUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42242C6CA291D727FD716928 /* Pods_holdBreath_holdBreathUITests.framework */; };
 		2EC3A95CC6B4A28A9F51EE0E /* Pods_holdBreathTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F6FC99DA51ED5FD55B691 /* Pods_holdBreathTests.framework */; };
+		3D40CEB426AD09E4006BE068 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3C43926AC4E88006F2BEB /* GoogleAppMeasurement.xcframework */; };
+		3D40CEB526AD09E4006BE068 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3C43A26AC4E88006F2BEB /* GoogleMobileAds.xcframework */; };
+		3D40CEB626AD09E4006BE068 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3C43026AC4E87006F2BEB /* GoogleUtilities.xcframework */; };
+		3D40CEB726AD09E4006BE068 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3C43826AC4E88006F2BEB /* nanopb.xcframework */; };
+		3D40CEB826AD09E4006BE068 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3C43126AC4E87006F2BEB /* PromisesObjC.xcframework */; };
+		3D40CEB926AD09E4006BE068 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3C43226AC4E88006F2BEB /* UserMessagingPlatform.xcframework */; };
 		3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007626A51AE400C7AD91 /* AppDelegate.swift */; };
 		3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */; };
 		3DBB007E26A51AE400C7AD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB007C26A51AE400C7AD91 /* Main.storyboard */; };
@@ -30,7 +36,6 @@
 		3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838DB26A98FE100C57680 /* ding.mp3 */; };
 		3DF838DE26AA567400C57680 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DD26AA567400C57680 /* info.swift */; };
 		3DF838E026AA627500C57680 /* notifcationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DF26AA627500C57680 /* notifcationVC.swift */; };
-		93FAD80AAD333FB68F32403A /* Pods_holdBreath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511548F0990449D558715D39 /* Pods_holdBreath.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 /* Begin PBXFileReference section */
 		17727DF800CDE0350E04BE9A /* Pods-holdBreathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreathTests.debug.xcconfig"; path = "Target Support Files/Pods-holdBreathTests/Pods-holdBreathTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29ACFC38AB1BF978418923FD /* Pods-holdBreath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holdBreath.release.xcconfig"; path = "Target Support Files/Pods-holdBreath/Pods-holdBreath.release.xcconfig"; sourceTree = "<group>"; };
+		3D40CEAA26AD0595006BE068 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserMessagingPlatform.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/UserMessagingPlatform.xcframework/ios-arm64_armv7/UserMessagingPlatform.framework"; sourceTree = "<group>"; };
+		3D40CEAC26AD0994006BE068 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserMessagingPlatform.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/UserMessagingPlatform.xcframework/ios-arm64_x86_64-simulator/UserMessagingPlatform.framework"; sourceTree = "<group>"; };
+		3D40CEBB26AD09E4006BE068 /* Promises-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
+		3D40CEBC26AD09E4006BE068 /* NanoPB-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
+		3D40CEBD26AD09E4006BE068 /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
+		3D40CEBE26AD09E4006BE068 /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
+		3D40CECD26AD0E7D006BE068 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleAppMeasurement.xcframework/ios-arm64_i386_x86_64-simulator/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		3D40CED126AD0E82006BE068 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/GoogleMobileAds.xcframework/ios-arm64_x86_64-simulator/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		3DBB007326A51AE400C7AD91 /* holdBreath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holdBreath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBB007626A51AE400C7AD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +131,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93FAD80AAD333FB68F32403A /* Pods_holdBreath.framework in Frameworks */,
+				3D40CEB426AD09E4006BE068 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				3D40CEB526AD09E4006BE068 /* GoogleMobileAds.xcframework in Frameworks */,
+				3D40CEB626AD09E4006BE068 /* GoogleUtilities.xcframework in Frameworks */,
+				3D40CEB726AD09E4006BE068 /* nanopb.xcframework in Frameworks */,
+				3D40CEB826AD09E4006BE068 /* PromisesObjC.xcframework in Frameworks */,
+				3D40CEB926AD09E4006BE068 /* UserMessagingPlatform.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +159,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D40CEBA26AD09E4006BE068 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				3D40CEBB26AD09E4006BE068 /* Promises-LICENSE */,
+				3D40CEBC26AD09E4006BE068 /* NanoPB-LICENSE */,
+				3D40CEBD26AD09E4006BE068 /* OpenMeasurement-LICENSE */,
+				3D40CEBE26AD09E4006BE068 /* GoogleUtilities-LICENSE */,
+			);
+			name = Licenses;
+			path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/Licenses";
+			sourceTree = "<group>";
+		};
 		3DBB006A26A51AE400C7AD91 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +253,11 @@
 		4E004D45FD57EE43D95A40CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D40CED126AD0E82006BE068 /* GoogleMobileAds.framework */,
+				3D40CECD26AD0E7D006BE068 /* GoogleAppMeasurement.framework */,
+				3D40CEBA26AD09E4006BE068 /* Licenses */,
+				3D40CEAA26AD0595006BE068 /* UserMessagingPlatform.framework */,
+				3D40CEAC26AD0994006BE068 /* UserMessagingPlatform.framework */,
 				3DDBBE7526AC544000B3BE81 /* SystemConfiguration.framework */,
 				3DDBBE7326AC543700B3BE81 /* StoreKit.framework */,
 				3DDBBE7126AC543100B3BE81 /* MessageUI.framework */,
@@ -694,6 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZT54R9366;
 				INFOPLIST_FILE = holdBreath/Info.plist;
@@ -701,66 +737,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AudioToolbox\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"CoreVideo\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleMobileAds\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"MediaPlayer\"",
-					"-framework",
-					"\"MessageUI\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UserMessagingPlatform\"",
-					"-framework",
-					"\"WebKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-weak_framework",
-					"\"AdSupport\"",
-					"-weak_framework",
-					"\"JavaScriptCore\"",
-					"-weak_framework",
-					"\"SafariServices\"",
-					"-weak_framework",
-					"\"WebKit\"",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -772,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZT54R9366;
 				INFOPLIST_FILE = holdBreath/Info.plist;
@@ -779,66 +760,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AudioToolbox\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"CoreVideo\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleMobileAds\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"MediaPlayer\"",
-					"-framework",
-					"\"MessageUI\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UserMessagingPlatform\"",
-					"-framework",
-					"\"WebKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-weak_framework",
-					"\"AdSupport\"",
-					"-weak_framework",
-					"\"JavaScriptCore\"",
-					"-weak_framework",
-					"\"SafariServices\"",
-					"-weak_framework",
-					"\"WebKit\"",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

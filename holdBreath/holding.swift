@@ -22,6 +22,8 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
     let fullScreenSize = UIScreen.main.bounds.size
     var pickView:UIPickerView?
     var dateString:String?
+    var historySignal = 0
+    var everySignal = 0
     @IBOutlet weak var switchHistory: UISwitch!
     @IBOutlet weak var switchEverysecond: UISwitch!
     @IBOutlet weak var labelBest: UILabel!
@@ -128,18 +130,24 @@ class holding: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudi
                 }
                 self.audioplayer.play()
             }
-            if self.switchEverysecond.isOn == true && self.textEverySecond.text != ""{
-                if holdtime % Int(self.textEverySecond.text!)! == 0 {
-                    print("經過設定時間")
-                    do{
-                        self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "ding", withExtension: "mp3")!)
-                    }
-                    catch{
-                        print("音樂載入錯誤\(error)")
-                    }
-                    self.audioplayer.play()
+        }
+        else{
+            print("突破個人紀錄，通知未開")
+        }
+        if self.switchEverysecond.isOn == true && self.textEverySecond.text != ""{
+            if holdtime % Int(self.textEverySecond.text!)! == 0 {
+                print("經過設定時間")
+                do{
+                    self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "ding", withExtension: "mp3")!)
                 }
+                catch{
+                    print("音樂載入錯誤\(error)")
+                }
+                self.audioplayer.play()
             }
+        }
+        else{
+            print("每秒提醒，通知未開")
         }
             print("開始正數\(holdtime)")
     }
