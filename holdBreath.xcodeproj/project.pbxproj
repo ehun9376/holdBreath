@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36EB8A3E2A496C3B002E995F /* done.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36EB8A3D2A496C3B002E995F /* done.mp3 */; };
+		36EB8A402A498684002E995F /* UserInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EB8A3F2A498684002E995F /* UserInfoCenter.swift */; };
+		36EB8A422A4987CE002E995F /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EB8A412A4987CE002E995F /* LocalNotificationCenter.swift */; };
 		3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007626A51AE400C7AD91 /* AppDelegate.swift */; };
 		3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */; };
 		3DBB007E26A51AE400C7AD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB007C26A51AE400C7AD91 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		36EB8A3D2A496C3B002E995F /* done.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = done.mp3; sourceTree = "<group>"; };
+		36EB8A3F2A498684002E995F /* UserInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCenter.swift; sourceTree = "<group>"; };
+		36EB8A412A4987CE002E995F /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationCenter.swift; sourceTree = "<group>"; };
 		3D40CEAA26AD0595006BE068 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserMessagingPlatform.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/UserMessagingPlatform.xcframework/ios-arm64_armv7/UserMessagingPlatform.framework"; sourceTree = "<group>"; };
 		3D40CEAC26AD0994006BE068 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserMessagingPlatform.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-8.8.0/UserMessagingPlatform.xcframework/ios-arm64_x86_64-simulator/UserMessagingPlatform.framework"; sourceTree = "<group>"; };
 		3D40CEBB26AD09E4006BE068 /* Promises-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
@@ -172,10 +176,12 @@
 			children = (
 				3DBB007626A51AE400C7AD91 /* AppDelegate.swift */,
 				3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */,
+				36EB8A3F2A498684002E995F /* UserInfoCenter.swift */,
 				3DBB00A626A52F7B00C7AD91 /* TrainingViewController.swift */,
 				3DBB00A826A52FA900C7AD91 /* ChoiseTrainingViewController.swift */,
 				3DBB00AA26A52FC400C7AD91 /* HoldingViewController.swift */,
 				3DBB00AC26A5300A00C7AD91 /* SettingViewController.swift */,
+				36EB8A412A4987CE002E995F /* LocalNotificationCenter.swift */,
 				3DF838DF26AA627500C57680 /* SetNotifcationViewController.swift */,
 				3DF838DD26AA567400C57680 /* InfoViewController.swift */,
 				3DBB007C26A51AE400C7AD91 /* Main.storyboard */,
@@ -396,7 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBB00A726A52F7B00C7AD91 /* TrainingViewController.swift in Sources */,
+				36EB8A422A4987CE002E995F /* LocalNotificationCenter.swift in Sources */,
 				3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */,
+				36EB8A402A498684002E995F /* UserInfoCenter.swift in Sources */,
 				3DF838E026AA627500C57680 /* SetNotifcationViewController.swift in Sources */,
 				3DBB00AD26A5300A00C7AD91 /* SettingViewController.swift in Sources */,
 				3DBB00AB26A52FC400C7AD91 /* HoldingViewController.swift in Sources */,
