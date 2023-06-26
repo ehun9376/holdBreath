@@ -1,6 +1,0 @@
-framework module Pods_holdBreathTests {
-  umbrella header "Pods-holdBreathTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
