@@ -83,10 +83,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNc-G4-Szb">
+                                <rect key="frame" x="20" y="418" width="93.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="購買次數"/>
+                                <connections>
+                                    <action selector="gotoBuyTimes:" destination="UAs-0D-oRs" eventType="touchUpInside" id="J6z-sn-dxQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAg-Gq-KEP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DNc-G4-Szb" firstAttribute="leading" secondItem="DTX-zf-MJl" secondAttribute="leading" id="31X-Oi-7ZC"/>
                             <constraint firstItem="pUZ-o6-OPu" firstAttribute="leading" secondItem="wAg-Gq-KEP" secondAttribute="leading" constant="20" id="3At-8f-0cd"/>
                             <constraint firstItem="pUZ-o6-OPu" firstAttribute="top" secondItem="eZj-oy-Bvc" secondAttribute="bottom" constant="20" id="60P-QV-Gb8"/>
                             <constraint firstItem="1eS-f8-4as" firstAttribute="top" secondItem="pUZ-o6-OPu" secondAttribute="bottom" constant="30" id="EDH-nE-9Xp"/>
@@ -96,6 +105,7 @@
                             <constraint firstItem="wAg-Gq-KEP" firstAttribute="trailing" secondItem="4Qn-TR-FG3" secondAttribute="trailing" constant="20" id="P6o-Wc-wSs"/>
                             <constraint firstItem="DTX-zf-MJl" firstAttribute="top" secondItem="1eS-f8-4as" secondAttribute="bottom" constant="30" id="QhJ-je-aLg"/>
                             <constraint firstItem="1eS-f8-4as" firstAttribute="leading" secondItem="wAg-Gq-KEP" secondAttribute="leading" constant="20" id="QjW-Vg-7MS"/>
+                            <constraint firstItem="DNc-G4-Szb" firstAttribute="top" secondItem="DTX-zf-MJl" secondAttribute="bottom" constant="30" id="R5Q-YC-Glh"/>
                             <constraint firstItem="eZj-oy-Bvc" firstAttribute="centerX" secondItem="8VH-nx-EtL" secondAttribute="centerX" id="S5t-6x-DE5"/>
                             <constraint firstItem="65B-nI-pqZ" firstAttribute="leading" secondItem="eZj-oy-Bvc" secondAttribute="trailing" constant="15" id="TBq-ss-ZBF"/>
                             <constraint firstItem="DTX-zf-MJl" firstAttribute="leading" secondItem="1eS-f8-4as" secondAttribute="leading" id="euO-4R-Cch"/>
@@ -604,7 +614,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t3m-jm-DgL">
-                                <rect key="frame" x="20" y="125" width="374" height="556"/>
+                                <rect key="frame" x="20" y="125" width="374" height="727"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="556" id="MCi-sn-niY"/>

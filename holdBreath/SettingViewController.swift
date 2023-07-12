@@ -15,6 +15,32 @@ class SettingViewController: UIViewController {
         }
     }
     
+    @IBAction func gotoBuyTimes(_ sender: UIButton) {
+        
+        IAPCenter.shared.getProducts {
+            DispatchQueue.main.async {
+                let vc = SelectViewController()
+                
+                var codeDataSource: [CodeModel] = []
+                
+                                
+                let buyedTypes = IAPCenter.shared.buyTypes
+                
+                for (index,type) in buyedTypes.enumerated() {
+                    codeDataSource.append(CodeModel(text: type.title, number: index, data: type))
+                }
+                
+                vc.dataSourceModels = codeDataSource
+                
+                self.present(vc, animated: true)
+            }
+
+        }
+        
+
+        
+        
+    }
     
     @IBOutlet weak var labelSetTime: UILabel!
     

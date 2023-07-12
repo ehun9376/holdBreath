@@ -30,6 +30,28 @@
 		3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF838DB26A98FE100C57680 /* ding.mp3 */; };
 		3DF838DE26AA567400C57680 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DD26AA567400C57680 /* InfoViewController.swift */; };
 		3DF838E026AA627500C57680 /* SetNotifcationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF838DF26AA627500C57680 /* SetNotifcationViewController.swift */; };
+		949C02A92A5ED212003CF152 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02A82A5ED211003CF152 /* APIService.swift */; };
+		949C02B12A5ED218003CF152 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02AA2A5ED218003CF152 /* BaseCollectionViewController.swift */; };
+		949C02B22A5ED218003CF152 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02AB2A5ED218003CF152 /* CellProtocol.swift */; };
+		949C02B32A5ED218003CF152 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02AC2A5ED218003CF152 /* TableViewAdapter.swift */; };
+		949C02B42A5ED218003CF152 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02AD2A5ED218003CF152 /* BaseTableViewController.swift */; };
+		949C02B52A5ED218003CF152 /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02AE2A5ED218003CF152 /* CollectionViewAdapter.swift */; };
+		949C02B62A5ED218003CF152 /* JBJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02AF2A5ED218003CF152 /* JBJson.swift */; };
+		949C02B72A5ED218003CF152 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02B02A5ED218003CF152 /* BaseViewController.swift */; };
+		949C02BC2A5ED221003CF152 /* IAPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02B82A5ED221003CF152 /* IAPModel.swift */; };
+		949C02BE2A5ED221003CF152 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02BA2A5ED221003CF152 /* KeyboardHelper.swift */; };
+		949C02BF2A5ED221003CF152 /* IAPCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02BB2A5ED221003CF152 /* IAPCenter.swift */; };
+		949C02C22A5ED25B003CF152 /* SwiftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02C02A5ED25B003CF152 /* SwiftButton.swift */; };
+		949C02C32A5ED25B003CF152 /* StackBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02C12A5ED25B003CF152 /* StackBottomBarView.swift */; };
+		949C02C52A5ED7E2003CF152 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02C42A5ED7E2003CF152 /* SelectViewController.swift */; };
+		949C02CC2A5ED8AD003CF152 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02C62A5ED8AD003CF152 /* SettingCell.swift */; };
+		949C02CD2A5ED8AD003CF152 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02C72A5ED8AD003CF152 /* ImageCell.swift */; };
+		949C02CE2A5ED8AD003CF152 /* BuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949C02C82A5ED8AD003CF152 /* BuyCell.xib */; };
+		949C02CF2A5ED8AD003CF152 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949C02C92A5ED8AD003CF152 /* ImageCell.xib */; };
+		949C02D02A5ED8AD003CF152 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949C02CA2A5ED8AD003CF152 /* SettingCell.xib */; };
+		949C02D12A5ED8AD003CF152 /* BuyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02CB2A5ED8AD003CF152 /* BuyCell.swift */; };
+		949C02D32A5ED8B8003CF152 /* CodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C02D22A5ED8B8003CF152 /* CodeModel.swift */; };
+		949C02D42A5EDBBB003CF152 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDBBE7326AC543700B3BE81 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +133,27 @@
 		3DF838DB26A98FE100C57680 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 		3DF838DD26AA567400C57680 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3DF838DF26AA627500C57680 /* SetNotifcationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNotifcationViewController.swift; sourceTree = "<group>"; };
+		949C02A82A5ED211003CF152 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = ../../AnnaDJ/AnnaDJ/APIService.swift; sourceTree = "<group>"; };
+		949C02AA2A5ED218003CF152 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCollectionViewController.swift; path = ../../AnnaDJ/AnnaDJ/Base/BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		949C02AB2A5ED218003CF152 /* CellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellProtocol.swift; path = ../../AnnaDJ/AnnaDJ/Base/CellProtocol.swift; sourceTree = "<group>"; };
+		949C02AC2A5ED218003CF152 /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewAdapter.swift; path = ../../AnnaDJ/AnnaDJ/Base/TableViewAdapter.swift; sourceTree = "<group>"; };
+		949C02AD2A5ED218003CF152 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewController.swift; path = ../../AnnaDJ/AnnaDJ/Base/BaseTableViewController.swift; sourceTree = "<group>"; };
+		949C02AE2A5ED218003CF152 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewAdapter.swift; path = ../../AnnaDJ/AnnaDJ/Base/CollectionViewAdapter.swift; sourceTree = "<group>"; };
+		949C02AF2A5ED218003CF152 /* JBJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JBJson.swift; path = ../../AnnaDJ/AnnaDJ/Base/JBJson.swift; sourceTree = "<group>"; };
+		949C02B02A5ED218003CF152 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../AnnaDJ/AnnaDJ/Base/BaseViewController.swift; sourceTree = "<group>"; };
+		949C02B82A5ED221003CF152 /* IAPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPModel.swift; path = ../../AnnaDJ/AnnaDJ/Helper/IAPModel.swift; sourceTree = "<group>"; };
+		949C02BA2A5ED221003CF152 /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHelper.swift; path = ../../AnnaDJ/AnnaDJ/Helper/KeyboardHelper.swift; sourceTree = "<group>"; };
+		949C02BB2A5ED221003CF152 /* IAPCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPCenter.swift; path = ../../AnnaDJ/AnnaDJ/Helper/IAPCenter.swift; sourceTree = "<group>"; };
+		949C02C02A5ED25B003CF152 /* SwiftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftButton.swift; path = ../../AnnaDJ/AnnaDJ/CustomView/SwiftButton.swift; sourceTree = "<group>"; };
+		949C02C12A5ED25B003CF152 /* StackBottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackBottomBarView.swift; path = ../../AnnaDJ/AnnaDJ/CustomView/StackBottomBarView.swift; sourceTree = "<group>"; };
+		949C02C42A5ED7E2003CF152 /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectViewController.swift; path = ../../AnnaDJ/AnnaDJ/pages/SelectViewController.swift; sourceTree = "<group>"; };
+		949C02C62A5ED8AD003CF152 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCell.swift; path = ../../AnnaDJ/AnnaDJ/Cell/SettingCell.swift; sourceTree = "<group>"; };
+		949C02C72A5ED8AD003CF152 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = ../../AnnaDJ/AnnaDJ/Cell/ImageCell.swift; sourceTree = "<group>"; };
+		949C02C82A5ED8AD003CF152 /* BuyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BuyCell.xib; path = ../../AnnaDJ/AnnaDJ/Cell/BuyCell.xib; sourceTree = "<group>"; };
+		949C02C92A5ED8AD003CF152 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCell.xib; path = ../../AnnaDJ/AnnaDJ/Cell/ImageCell.xib; sourceTree = "<group>"; };
+		949C02CA2A5ED8AD003CF152 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingCell.xib; path = ../../AnnaDJ/AnnaDJ/Cell/SettingCell.xib; sourceTree = "<group>"; };
+		949C02CB2A5ED8AD003CF152 /* BuyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuyCell.swift; path = ../../AnnaDJ/AnnaDJ/Cell/BuyCell.swift; sourceTree = "<group>"; };
+		949C02D22A5ED8B8003CF152 /* CodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CodeModel.swift; path = ../../AnnaDJ/AnnaDJ/Model/CodeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949C02D42A5EDBBB003CF152 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +218,27 @@
 		3DBB007526A51AE400C7AD91 /* holdBreath */ = {
 			isa = PBXGroup;
 			children = (
+				949C02D22A5ED8B8003CF152 /* CodeModel.swift */,
+				949C02CB2A5ED8AD003CF152 /* BuyCell.swift */,
+				949C02C82A5ED8AD003CF152 /* BuyCell.xib */,
+				949C02C72A5ED8AD003CF152 /* ImageCell.swift */,
+				949C02C92A5ED8AD003CF152 /* ImageCell.xib */,
+				949C02C62A5ED8AD003CF152 /* SettingCell.swift */,
+				949C02CA2A5ED8AD003CF152 /* SettingCell.xib */,
+				949C02BB2A5ED221003CF152 /* IAPCenter.swift */,
+				949C02B82A5ED221003CF152 /* IAPModel.swift */,
+				949C02BA2A5ED221003CF152 /* KeyboardHelper.swift */,
+				949C02A82A5ED211003CF152 /* APIService.swift */,
+				949C02C42A5ED7E2003CF152 /* SelectViewController.swift */,
+				949C02C12A5ED25B003CF152 /* StackBottomBarView.swift */,
+				949C02C02A5ED25B003CF152 /* SwiftButton.swift */,
+				949C02AA2A5ED218003CF152 /* BaseCollectionViewController.swift */,
+				949C02AD2A5ED218003CF152 /* BaseTableViewController.swift */,
+				949C02B02A5ED218003CF152 /* BaseViewController.swift */,
+				949C02AB2A5ED218003CF152 /* CellProtocol.swift */,
+				949C02AE2A5ED218003CF152 /* CollectionViewAdapter.swift */,
+				949C02AF2A5ED218003CF152 /* JBJson.swift */,
+				949C02AC2A5ED218003CF152 /* TableViewAdapter.swift */,
 				3DBB007626A51AE400C7AD91 /* AppDelegate.swift */,
 				3DBB007826A51AE400C7AD91 /* SceneDelegate.swift */,
 				36EB8A3F2A498684002E995F /* UserInfoCenter.swift */,
@@ -366,6 +431,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949C02CF2A5ED8AD003CF152 /* ImageCell.xib in Resources */,
+				949C02CE2A5ED8AD003CF152 /* BuyCell.xib in Resources */,
+				949C02D02A5ED8AD003CF152 /* SettingCell.xib in Resources */,
 				3DF838DA26A9288500C57680 /* moreThenPB.mp3 in Resources */,
 				3DBB00B126A56FA000C7AD91 /* holdBreath.mp3 in Resources */,
 				3DF838DC26A98FE100C57680 /* ding.mp3 in Resources */,
@@ -402,15 +470,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBB00A726A52F7B00C7AD91 /* TrainingViewController.swift in Sources */,
+				949C02B22A5ED218003CF152 /* CellProtocol.swift in Sources */,
+				949C02D32A5ED8B8003CF152 /* CodeModel.swift in Sources */,
 				36EB8A422A4987CE002E995F /* LocalNotificationCenter.swift in Sources */,
+				949C02BF2A5ED221003CF152 /* IAPCenter.swift in Sources */,
+				949C02C52A5ED7E2003CF152 /* SelectViewController.swift in Sources */,
+				949C02BC2A5ED221003CF152 /* IAPModel.swift in Sources */,
+				949C02B32A5ED218003CF152 /* TableViewAdapter.swift in Sources */,
 				3DBB007726A51AE400C7AD91 /* AppDelegate.swift in Sources */,
+				949C02B72A5ED218003CF152 /* BaseViewController.swift in Sources */,
+				949C02B12A5ED218003CF152 /* BaseCollectionViewController.swift in Sources */,
 				36EB8A402A498684002E995F /* UserInfoCenter.swift in Sources */,
+				949C02BE2A5ED221003CF152 /* KeyboardHelper.swift in Sources */,
+				949C02A92A5ED212003CF152 /* APIService.swift in Sources */,
 				3DF838E026AA627500C57680 /* SetNotifcationViewController.swift in Sources */,
 				3DBB00AD26A5300A00C7AD91 /* SettingViewController.swift in Sources */,
 				3DBB00AB26A52FC400C7AD91 /* HoldingViewController.swift in Sources */,
 				3DF838DE26AA567400C57680 /* InfoViewController.swift in Sources */,
+				949C02B42A5ED218003CF152 /* BaseTableViewController.swift in Sources */,
+				949C02CC2A5ED8AD003CF152 /* SettingCell.swift in Sources */,
 				3DBB007926A51AE400C7AD91 /* SceneDelegate.swift in Sources */,
+				949C02B52A5ED218003CF152 /* CollectionViewAdapter.swift in Sources */,
 				3DBB00A926A52FA900C7AD91 /* ChoiseTrainingViewController.swift in Sources */,
+				949C02B62A5ED218003CF152 /* JBJson.swift in Sources */,
+				949C02C32A5ED25B003CF152 /* StackBottomBarView.swift in Sources */,
+				949C02C22A5ED25B003CF152 /* SwiftButton.swift in Sources */,
+				949C02CD2A5ED8AD003CF152 /* ImageCell.swift in Sources */,
+				949C02D12A5ED8AD003CF152 /* BuyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,15 +674,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = NZT54R9366;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2A355R9S3;
 				INFOPLIST_FILE = holdBreath/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,15 +702,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = NZT54R9366;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2A355R9S3;
 				INFOPLIST_FILE = holdBreath/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ehun.com.tw.holdBreath;
 				PRODUCT_NAME = "$(TARGET_NAME)";

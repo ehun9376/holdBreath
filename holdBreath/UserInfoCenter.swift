@@ -33,6 +33,7 @@ class UserInfoCenter: NSObject {
         
         //通知的日期
         case notifWeek
+        case iaped
     }
     
     func storeValue(_ type: UserInfoDataType, data: Any?) {

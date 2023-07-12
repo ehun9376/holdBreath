@@ -7,7 +7,7 @@
 
 import UIKit
 import AVFoundation
-class HoldingViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,AVAudioPlayerDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
+class HoldingViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate,AVAudioPlayerDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
     var signal = 0
     var holdtime = 0
     var everytime = ["15","30","60"]
@@ -24,6 +24,18 @@ class HoldingViewController: UIViewController,UITableViewDataSource,UITableViewD
     var dateString:String?
     var historySignal = 0
     var everySignal = 0
+    
+    var times: Int  {
+        get {
+            return UserInfoCenter.shared.loadValue(.iaped) as? Int ?? 0
+        }
+        set {
+            UserInfoCenter.shared.storeValue(.iaped, data: newValue)
+            btnStart.setTitle("Start，剩餘\(newValue)次", for: .normal)
+        }
+    }
+    
+    
     @IBOutlet weak var switchHistory: UISwitch!
     @IBOutlet weak var switchEverysecond: UISwitch!
     @IBOutlet weak var labelBest: UILabel!
@@ -33,7 +45,21 @@ class HoldingViewController: UIViewController,UITableViewDataSource,UITableViewD
     @IBOutlet weak var tableHistory: UITableView!
     @IBOutlet weak var btnStart: UIButton!
     
+    
+    
     @IBAction func buttonStart(_ sender: UIButton) {
+        
+        if signal == 0 {
+            if self.times > 0 {
+                self.times -= 1
+            } else {
+                self.showToast(message: "次數用完囉，請至設定頁購買")
+                return
+            }
+        }
+
+       
+        
         //start開始時計時器就會跳時間
         //先倒數10秒再開始正數
         if signal == 0 {
@@ -50,7 +76,7 @@ class HoldingViewController: UIViewController,UITableViewDataSource,UITableViewD
             signal = 0
             self.switchHistory.isHidden = false
             self.switchEverysecond.isHidden = false
-            sender.setTitle("Start", for: .normal)
+            btnStart.setTitle("Start，剩餘\(self.times)次", for: .normal)
             timer.invalidate()
             print("紀錄是\(holdtime)")
             self.recordArray?.append(["date":"\(self.dateString!)","record":"\(holdtime)"])
@@ -79,8 +105,16 @@ class HoldingViewController: UIViewController,UITableViewDataSource,UITableViewD
     @IBAction func switchSecond(_ sender: UISwitch) {
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.times = UserInfoCenter.shared.loadValue(.iaped) as? Int ?? 0
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         //audioPlayer區
         do{
             self.audioplayer = try AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "holdBreath", withExtension: "mp3")!)

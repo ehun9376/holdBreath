@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge]) { granted, error in
 
         }
+        
+        if  UserInfoCenter.shared.loadValue(.iaped) == nil {
+            UserInfoCenter.shared.storeValue(.iaped, data: 3)
+        }
+        
         return true
     }
 
